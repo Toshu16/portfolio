@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio Navbar</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">MyPortfolio</div>
+    <nav class="nav-links" id="navLinks">
+     <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#resume">Resume</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-right">
+      <button id="toggleTheme" class="theme-btn">🌙</button>
+      <div class="hamburger" id="hamburger">&#9776;</div>
+    </div>
+  </header>
+
+  <div id="mobileMenu" class="mobile-menu">
+    <a href="#home" onclick="closeMenu()">Home</a>
+    <a href="#about" onclick="closeMenu()">About</a>
+    <a href="#projects" onclick="closeMenu()">Projects</a>
+    <a href="#skills" onclick="closeMenu()">Skills</a>
+    <a href="#resume" onclick="closeMenu()">Resume</a>
+    <a href="#contact" onclick="closeMenu()">Contact</a>
+  </div>
+
+  <!-- Placeholder sections -->
+  <section id="home" class="home-section">
+  <div class="home-container">
+    <div class="home-text">
+      <h1>Hello, I’m <span class="highlight">Mohammad Tousif Khan</span></h1>
+      <h2>A Passionate <span class="highlight">MEAN Stack Developer</span></h2>
+      <p>I build powerful web applications using MongoDB, Express.js, Angular, and Node.js.  
+        Clean code, performance, and scalable architecture are my priorities.</p>
+      <div class="tech-stack">
+        <span>MongoDB</span>
+        <span>Express.js</span>
+        <span>Angular</span>
+        <span>Node.js</span>
+      </div>
+      <div class="buttons">
+        <a href="#contact" class="btn">Contact Me</a>
+        <a  href="https://raw.githubusercontent.com/Toshu16/portfolio/main/Resume.pdf" download="Tousif_Resume.pdf" class="btn secondary" download>Download Resume</a>
+      </div>
+    </div>
+    <div class="home-image">
+      <img src="image2.png" alt="Your Photo" />
+    </div>
+  </div>
+</section>
+
+  <section id="about" class="about-section">
+  <div class="container">
+    <div class="about-content">
+      <!-- Text Column -->
+      <div class="about-text">
+        <h5 class="subheading">About Me</h5>
+        <h2 class="heading">Who I Am</h2>
+        <p>
+          I'm <strong>Tousif</strong>, a passionate and hardworking developer with a strong interest in web technologies. I’ve completed my <strong>Bachelor of Computer Applications (BCA)</strong> from <strong>Star Infotech College, Ajmer</strong> and am currently pursuing my <strong>Master of Computer Applications (MCA)</strong> at <strong>Vivekananda Global University (VGU), Jaipur</strong>.
+        </p>
+        <p>
+          I love building web applications that solve real-world problems, and I'm on a mission to become a highly skilled full-stack developer. I'm proud to call <strong>Ajmer</strong> my hometown, and I celebrate my birthday on <strong>16<sup>th</sup> July</strong>.
+        </p>
+      </div>
+
+      <!-- Image Column -->
+      <div class="about-image">
+        <div class="diamond-frame">
+          <div class="diamond-border"></div>
+          <div class="diamond-image-wrapper">
+            <img src="image3.jpeg" alt="Tousif" class="about-img" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+  <section id="projects" class="projects-section">
+  <div class="container">
+    <div class="section-header">
+      <h5 class="subheading">Projects</h5>
+      <h2 class="heading">What I’ve Built</h2>
+    </div>
+
+    <div class="projects-grid">
+      
+      <!-- Project 1 -->
+      <div class="project-card">
+        <div class="project-icon">📚</div>
+        <h3>Bookstore Management System</h3>
+        <p>
+          A full-stack web app to manage books, authors, sales, and inventory using MongoDB, Express, Angular, and Node.js.
+        </p>
+        <p class="tech">Tech Used: MEAN Stack</p>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project-card">
+        <div class="project-icon">🩺</div>
+        <h3>Nurse Management System</h3>
+        <p>
+          Web platform to manage nurse bookings for injections, drips, and wound dressing — includes appointment system and dashboard.
+        </p>
+        <p class="tech">Tech Used: MEAN Stack, Angular Material</p>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="project-card">
+        <div class="project-icon">🏥</div>
+        <h3>MD Care Hospital Management</h3>
+        <p>
+          A hospital portal for managing patients, doctors, appointments, documents, diagnoses, and billing with role-based access.
+        </p>
+        <p class="tech">Tech Used: Angular, Node.js, MongoDB, Bootstrap</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  <section id="skills" class="skills-section">
+  <div class="container">
+    <div class="section-header">
+      <h5 class="subheading">Skills</h5>
+      <h2 class="heading">My Technical Toolkit</h2>
+      <p class="description">
+        A diverse set of tools, languages, and platforms I use to build clean, scalable, and modern web applications.
+      </p>
+    </div>
+
+    <div class="skills-wrapper">
+      <!-- Web Design -->
+      <div class="skill-box">
+        <h3>🌐 Web Design</h3>
+        <div class="skills-list">
+          <span title="HyperText Markup Language">HTML</span>
+          <span title="Cascading Style Sheets">CSS</span>
+          <span title="Bootstrap Framework">Bootstrap</span>
+        </div>
+      </div>
+
+      <!-- Programming Languages -->
+      <div class="skill-box">
+        <h3>💻 Programming Languages</h3>
+        <div class="skills-list">
+          <span title="C Language">C</span>
+          <span title="C++ Language">C++</span>
+          <span title="Java Programming">Java</span>
+          <span title="Python Programming">Python</span>
+          <span title="PHP Scripting">PHP</span>
+          <span title="JavaScript ES6+">JavaScript</span>
+        </div>
+      </div>
+
+      <!-- Frameworks & Platforms -->
+      <div class="skill-box">
+        <h3>🚀 Frameworks & Platforms</h3>
+        <div class="skills-list">
+          <span title="Angular (Frontend Framework)">Angular</span>
+          <span title="Salesforce Admin Platform">Salesforce Admin</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <section id="resume" class="resume-section">
+  <div class="container">
+    <div class="section-header">
+      <h5 class="subheading">Resume</h5>
+      <h2 class="heading">Mohammad Tousif Khan</h2>
+      <p class="location">Ander Kot, Ajmer, Rajasthan, India | 📞 8764311945 | 📧 tousifkhan8515@gmail.com</p>
+    </div>
+
+    <div class="resume-grid">
+
+      <!-- Summary -->
+      <div class="resume-box">
+        <h3>📝 Summary</h3>
+        <p>
+          Dedicated <strong>Front-End Developer</strong> with expertise in <strong>Angular</strong> and the <strong>MEAN stack</strong>. Skilled in <strong>HTML</strong>, <strong>CSS</strong>, <strong>Bootstrap</strong>, and <strong>JavaScript</strong> for building responsive web applications.
+        </p>
+        <p>
+          Experienced in real-time projects like <strong>Bookstore Management Systems</strong> with strong UI/UX implementation. Eager to expand backend skills and transition into a <strong>Full-Stack Developer</strong> role.
+        </p>
+        <p>Committed to continuous learning, teamwork, and delivering high-quality solutions.</p>
+      </div>
+
+      <!-- Skills -->
+      <div class="resume-box">
+        <h3>⚙️ Skills</h3>
+        <ul>
+          <li><strong>Platform:</strong> Windows</li>
+          <li><strong>Web Design:</strong> HTML, CSS, Bootstrap</li>
+          <li><strong>Programming:</strong> C, C++, PHP, Python, Java, JavaScript</li>
+          <li><strong>Frameworks/Tools:</strong> Angular, Salesforce Admin</li>
+        </ul>
+      </div>
+
+      <!-- Projects -->
+      <div class="resume-box">
+        <h3>💼 Projects</h3>
+        <p><strong>Online Bookstore Management:</strong><br>
+          A complete MEAN stack application with Admin & User modules for category, book, order, and customer management. Features registration, cart, online payments, and secure checkout.
+        </p>
+        <p><strong>Hospital Management System:</strong><br>
+          A centralized admin portal to manage patient records, staff, billing, and appointments. Integrated with Rcopia for EMR and prescription management.
+        </p>
+      </div>
+
+      <!-- Education -->
+      <div class="resume-box">
+        <h3>🎓 Education</h3>
+        <ul>
+          <li><strong>High School</strong> — 2021</li>
+          <li><strong>Bachelor of Computer Applications</strong>, MDSU University — 2024</li>
+          <li><strong>Master of Computer Applications</strong> (Pursuing), VGU Jaipur</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Resume Download -->
+    <div class="resume-download">
+      <a  href="https://raw.githubusercontent.com/Toshu16/portfolio/main/Resume.pdf" download="Tousif_Resume.pdf" class="btn" download>⬇️ Download PDF Resume</a>
+    </div>
+  </div>
+</section>
+
+  <section id="contact" class="contact-section">
+  <div class="container">
+    <div class="section-header">
+      <h5 class="subheading">Get In Touch</h5>
+      <h2 class="heading">Let’s Build Something Great Together</h2>
+      <p class="description">Have a question or want to work with me? I’d love to hear from you!</p>
+    </div>
+
+    <div class="contact-grid">
+      
+      <!-- Contact Info -->
+      <div class="contact-info">
+        <div class="info-item">
+          <i class="fas fa-user"></i>
+          <span>Mohammad Tousif Khan</span>
+        </div>
+        <div class="info-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <span>Ander Kot, Ajmer, Rajasthan, India</span>
+        </div>
+        <div class="info-item">
+          <i class="fas fa-phone-alt"></i>
+          <span>+91 8764311945</span>
+        </div>
+        <div class="info-item">
+          <i class="fas fa-envelope"></i>
+          <span>tousifkhan8515@gmail.com</span>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <form class="contact-form"  action="https://formspree.io/f/xwpbzkvv" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit">Send Message 🚀</button>
+      </form>
+
+    </div>
+  </div>
+</section>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
