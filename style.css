@@ -217,9 +217,9 @@ body.dark {
 }
 
 .home-image img {
-  max-width: 100%;
+ max-width: 100%;
   border-radius: 16px;
-  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+   filter: drop-shadow(10px 10px 8px rgba(0, 0, 0, 0.5));
 }
 
 /* Animations */
